@@ -22,10 +22,10 @@ export function Header({ title }: HeaderProps) {
         <div className="flex items-center gap-4">
           {/* Search */}
           <div className="relative mx-6">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
             <Input 
               placeholder="Search here" 
-              className="pl-10 w-80 bg-background rounded-xl p-5"
+              className="pl-12 w-80 bg-background rounded-2xl p-5"
             />
           </div>
 
