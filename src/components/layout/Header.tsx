@@ -25,7 +25,7 @@ export function Header({ title }: HeaderProps) {
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
             <Input 
               placeholder="Search here" 
-              className="pl-12 w-80 bg-background rounded-2xl p-5"
+              className="pl-12 w-80 bg-background rounded-2xl"
             />
           </div>
 
