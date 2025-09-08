@@ -57,6 +57,35 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        brand: {
+          orange: "hsl(var(--brand-orange))",
+          blue: "hsl(var(--brand-blue))", 
+          purple: "hsl(var(--brand-purple))",
+          green: "hsl(var(--brand-green))",
+        },
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
+        error: "hsl(var(--error))",
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-orange': 'var(--gradient-orange)', 
+        'gradient-earnings': 'var(--gradient-earnings)',
+      },
+      boxShadow: {
+        'sm': 'var(--shadow-sm)',
+        'md': 'var(--shadow-md)',
+        'lg': 'var(--shadow-lg)',
+      },
+      transitionProperty: {
+        'all': 'var(--transition)',
       },
       borderRadius: {
         lg: "var(--radius)",

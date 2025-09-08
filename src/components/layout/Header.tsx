@@ -1,0 +1,52 @@
+import { Search, Bell, MessageCircle, ChevronDown } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+interface HeaderProps {
+  title: string;
+}
+
+export function Header({ title }: HeaderProps) {
+  return (
+    <header className="bg-card border-b border-border px-6 py-4">
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold text-foreground">{title}</h1>
+        
+        <div className="flex items-center gap-4">
+          {/* Search */}
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+            <Input 
+              placeholder="Search here" 
+              className="pl-10 w-80 bg-background"
+            />
+          </div>
+
+          {/* Notifications */}
+          <Button variant="ghost" size="icon" className="relative">
+            <Bell className="w-5 h-5" />
+            <span className="absolute -top-1 -right-1 w-2 h-2 bg-brand-orange rounded-full"></span>
+          </Button>
+
+          {/* Messages */}
+          <Button variant="ghost" size="icon">
+            <MessageCircle className="w-5 h-5" />
+          </Button>
+
+          {/* User Profile */}
+          <div className="flex items-center gap-3">
+            <Avatar className="w-8 h-8">
+              <AvatarImage src="/placeholder-avatar.jpg" />
+              <AvatarFallback className="bg-brand-purple text-white">DB</AvatarFallback>
+            </Avatar>
+            <div className="hidden md:block">
+              <p className="text-sm font-medium">David Bemoussian</p>
+            </div>
+            <ChevronDown className="w-4 h-4 text-muted-foreground" />
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
