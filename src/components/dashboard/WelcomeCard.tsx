@@ -6,7 +6,7 @@ export function WelcomeCard() {
     <Card className="bg-gradient-primary border-0 text-white p-6 relative overflow-hidden">
       <div className="relative z-10">
         <h2 className="text-xl font-bold mb-2">
-          Welcome to ManageX Service Management Dashboard 😊
+            Welcome to Previcta Service Management Dashboard 😊
         </h2>
         <Button 
           variant="secondary" 

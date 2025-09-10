@@ -39,7 +39,7 @@ export function Sidebar({ className }: SidebarProps) {
           <div className="w-8 h-8 bg-gradient-orange rounded-lg flex items-center justify-center">
             <Rocket className="w-5 h-5 text-white" />
           </div>
-          <span className="text-xl font-bold text-foreground">ManageX</span>
+            <span className="text-xl font-bold text-foreground">Previcta</span>
         </div>
       </div>
 
